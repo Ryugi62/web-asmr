@@ -1,26 +1,31 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <asmrHeader />
+  <asmrBody />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import asmrHeader from "@/components/asmrHeader.vue";
+import asmrBody from "@/components/asmrBody.vue";
 
 export default {
-  name: 'App',
+  name: "App",
+
   components: {
-    HelloWorld
-  }
-}
+    asmrHeader,
+    asmrBody,
+  },
+};
 </script>
 
 <style>
+* {
+  /* border: 1px solid red; */
+}
+
+html,
+body,
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin: 0;
+  height: 100%;
 }
 </style>
